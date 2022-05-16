@@ -1,0 +1,119 @@
+@font-face {
+  font-family: stampete;
+  src: url(fonts/Stampete-dpxg.ttf);
+}
+
+body {
+  display: grid;
+}
+
+.checkoutCard {
+  place-self: center;
+  background-color: #0D377F;
+  color: #0D377F;
+  border-radius: 3px;
+  display: grid;
+  height: 615px;
+  width: 400px;
+  gap: 1px;
+  box-shadow: 0 0 3px 1px black;
+  grid-template-columns: 106px 294px;
+  grid-template-rows: 50px repeat(2, 40px) 5px 20px repeat(11, 40px) 20px;
+}
+
+.envelope {
+  grid-area: 8/1/-1/-1;
+  align-self: end;
+  justify-self: center;
+  background-color: #FCA108;
+  border-radius: 2px 2px 5px 5px;
+  box-shadow: 0px -2px 5px -1px, inset 0px -5px 100px 13px #866739;
+  display: grid;
+  height: 412px;
+  width: 420px;
+}
+
+.cell {
+  font-size: .75em;
+  text-shadow: 0 0 2px;
+  box-shadow:inset 0 0 1px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #C7DDD5;
+}
+
+.dateDue {
+  grid-row: 5 / 6;
+}
+
+.borrowersName {
+  grid-column: 2 / 3;
+  grid-row: 5 / 6;
+}
+
+
+.date1 {
+  color: rgba(29, 29, 63, 0.822);
+  font-size: 1em;
+  font-family: stampete;
+  grid-row: 6 ;
+}
+
+.date1 > .text {
+  margin-top: 15px;
+  transform: rotate(8deg);
+}
+
+.date2 {
+  color: rgba(44, 46, 58, 0.801);
+  font-size: 1em;
+  font-family: stampete;
+  grid-row: 7;
+  order: -1;
+}
+
+.date2 > .text {
+  transform: rotate(3deg);
+}
+
+.person1 {
+
+  color: #213058d0;
+  font-size: 1.7em;
+  text-shadow: 0 0 2px;
+  font-family: 'Water Brush';
+  grid-row: 6;
+}
+
+.person2 {
+  color: #1b264198;
+  font-size: 1.7em;
+  text-shadow: 0 0 2px;
+  font-family: 'Reenie Beanie';
+  grid-row: 7;
+}
+
+.empty1{
+  grid-column: 1/3;
+}
+
+.empty2 {
+  grid-row: 4;
+  grid-column: 1/3;
+}
+
+.back {
+  align-self: center;
+  justify-self: center;
+  background-color: #FCA108;
+  border-radius: 15px;
+  box-shadow: 0px -2px 5px -2px, inset 0px -5px 85px 5px #866739;
+  display: grid;
+  height: 300px;
+  width: 419px;
+}
+
+.fill{
+  text-align: start;
+}
