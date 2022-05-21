@@ -11,31 +11,54 @@
 </head>
 <body>
   <div class="book">
-    <div class="page1">
+    <form class="page1" id="newBook">
       <div class="back">
         <div class="checkoutCard">
           <div class="cell empty1"></div>
-          <div class="cell fill pages">#PAGES</div>
-          <div class="cell fill author">AUTHOR</div>
-          <div class="cell fill read">FINISHED</div>
-          <div class="cell fill title">TITLE</div>
-          <div class="cell dateDue">DATE DUE</div>
-          <div class="cell borrowersName">BORROWER'S NAME</div>
-          <div class="cell date1"><div class="text">OCT 10 1987</div></div>
-          <div class="cell date2"><div class="text">APR 23 1994</div></div>
-          <div class="cell person1"><div class="name">Topsy Crets</div></div>
-          <div class="cell person2"><div class="name">Abdul Alhazred</div></div>
-          <div class="cell empty2"></div>
-          <div class="envelope"></div>
+
+          <div class="cell fill">
+            <label for="pages">PAGES</label>
+            <input id="pages" type="number" required>
+          </div>
+          <div class="cell fill">
+            <label for="author">AUTHOR</label>
+            <input id="author" type="text" required>
+          </div>
+          <div class="cell fill">
+            <label for="read">READ?</label>
+            <input id="read" type="checkbox">
+          </div>
+          <div class="cell fill">
+            <label for="title">TITLE</label>
+            <input id="title" name="title" type="text" required>
+          </div>
+
+          <div class="cell dateDue"><span class="text">DATE DUE</span></div>
+          <div class="cell borrowersName"><span class="text">BORROWER'S NAME</span></div>
+          <div class="cell date1"><span class="text">OCT 10 1987</span></div>
+          <div class="cell date2"><span class="text">APR 23 1994</span></div>
+          <div class="cell person1"><span class="name">Topsy Kretts</span></div>
+          <div class="cell person2"><span class="name">Abdul Alhazred</span></div>
+          <span class="cell empty2"></span>
+          <div class="envelope">
+            <button>New Book</button>
+          </div>
         </div>
       </div>
+    </form>
+
+    <div id="page2">
+      <span class="tableOfContents">Table of Contents</span>
+      <ul>
+        <li>
+          <span>Read?</span>
+          <span>Title</span>
+          <span>Author</span>
+          <span>Pages</span>
+          <span class="break"></span>
+        </li>
+      </ul>
     </div>
-
-    <div class="page2">
-      <div class="tableOfContents">Table of Contents</div>
-    </div>
-
-
 
   </div>
 </body>
